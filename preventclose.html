@@ -1,0 +1,48 @@
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+    .description {
+        font-size: 3vw;
+    }
+
+    .center {
+        display: flex;
+        font-size: 5vw;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    body {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: white;
+        }
+    }
+</style>
+<body>
+<p class="center">
+    <span class="description">Just leave this tab open and your browser won't close automatically</span>
+    <br>
+    <b id="text">Interact with me to enable</b>
+</p>
+<script>
+    const events = ['mousedown', 'touchstart', 'keydown']
+
+    function onTrigger() {
+        events.forEach(event => document.removeEventListener(event, onTrigger))
+        document.querySelector("#text").innerText = 'Enabled'
+        window.onbeforeunload = () => "?"
+    }
+
+    window.onload = () => events.forEach(event => document.addEventListener(event, onTrigger))
+</script>
+</body>
+</html>
