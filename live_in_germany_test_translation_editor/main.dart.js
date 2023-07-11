@@ -94407,7 +94407,7 @@ A.Kx.prototype={
 O(a){var s=null,r=this.c
 return A.je(new A.KE(r.d/r.e,new A.Bh(new A.zl("assets/"+r.c,"live_in_germany_test"),B.dq,s),s),s,s)}}
 A.rv.prototype={
-bd(){return 21}}
+bd(){return null}}
 A.aAY.prototype={
 $1(a){var s,r,q=this.a,p=q.gkc(),o=t.S
 p=a.lf(0,p.gdS(p),o)
