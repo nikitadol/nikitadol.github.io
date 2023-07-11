@@ -26931,7 +26931,7 @@ a5I:function a5I(){},
 aDr(){var s=0,r=A.L(t.N4),q,p,o
 var $async$aDr=A.M(function(a,b){if(a===1)return A.I(b,r)
 while(true)switch(s){case 0:s=3
-return A.C(new A.aqL(A.fC("/sqlite3.wasm"),A.fC("/drift_worker.dart.js"),"app_db",new A.aDs(),A.aC(t.Qr),A.a([B.lY],t.vy)).jf(0),$async$aDr)
+return A.C(new A.aqL(A.fC("sqlite3.wasm"),A.fC("drift_worker.dart.js"),"app_db",new A.aDs(),A.aC(t.Qr),A.a([B.lY],t.vy)).jf(0),$async$aDr)
 case 3:p=b
 o=p.c
 if(o.a!==0)A.tH("Using "+p.b.k(0)+" due to missing browser features: "+o.k(0))
